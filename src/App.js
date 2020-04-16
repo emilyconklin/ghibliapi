@@ -15,6 +15,7 @@ const getMovies = async () => {
 const response = await fetch(`https://ghibliapi.herokuapp.com/films`);
 const data = await response.json();
 setMovies(data);
+console.log(data);
 }
 
   return (
@@ -26,7 +27,8 @@ setMovies(data);
         <Movie title={film.title} 
         director={film.director} 
         desc={film.description}
-        reldate={film.release_date}/>
+        reldate={film.release_date}
+        photo={film.id}/>
       ))}</div>
     </div>
   );
