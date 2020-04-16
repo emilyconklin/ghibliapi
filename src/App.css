@@ -14,8 +14,7 @@ p {
 }
 
 img {
-  max-width: 350px;
-  height: auto;
+  max-width: 40vw;
   display: block;
   margin: auto;
   margin-top: 1rem;
